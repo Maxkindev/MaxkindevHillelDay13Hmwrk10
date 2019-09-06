@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+}
+
+.nav {
+    width: 556px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 200px 150px;
+    font-size: 0;
+    text-align: center;
+}
+/****************************************/
+/* basic css for all LINKS */
+.menu__link,
+.dropdown__link,
+.submenu__link {
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #000000;
+}
+
+/* basic css for all ULs */
+.menu,
+.menu-item__dropdown,
+.dropdown-item__submenu {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+/* basic css for all LIST-ITEMs */
+.menu__list-item,
+.dropdown__list-item,
+.submenu__list-item {
+    width: 180px;
+    height: 30px;
+    border: 1px solid #000000;
+    background-color: #e1e1e1;
+}
+/****************************************/
+
+.menu__list-item {
+    display: inline-block;
+    position: relative;
+}
+
+.menu__list-item:not(:last-child) {
+    margin-right:5px;
+}
+
+.menu-item__dropdown {
+    position: absolute;
+    display: none;
+}
+
+.menu__list-item:hover .menu-item__dropdown {
+    display: block;
+    top: 31px;
+    left: -1px;
+}
+/****************************************/
+
+.dropdown__list-item {
+    position: relative
+}
+
+.dropdown-item__submenu {
+    position: absolute;
+    display: none;
+}
+
+.dropdown__list-item:hover .dropdown-item__submenu {
+    display: block;
+    top: -1px;
+    right: -183px;
+}
